@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>
+          Forms.  We don't need no stinking forms!
+      </title>
+  </head>
+  <body>
+      <h1>A Form.</h1>
+      <form action="form_submit.php"  method="post" name="myform">
+      <fieldset>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" />
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" />
+        <label for="password">Password</label>
+        <input type="password" name="password"  id="password" />
+        </fieldset>
+        <fieldset>
+            <label for="isAwesome">
+                is Awesome? <!-- input is inside the label here -->
+                <input type="checkbox" name="isAwesome" id="isAwesome">
+                <!-- checkboxes are very small -->
+        </fieldset>
+        <fieldset>
+          <label>
+            tall
+            <input type="radio" name="height" id="height_tall" />
+          </label>
+          <label>
+            short
+            <input type="radio" name="height" id="height_short" />
+          </label>
+        </fieldset>
+        <input type="submit" value="Save Me!" id="submit" />
+        <input type="reset" value="Reset" id="reset" />
+      <!-- target="_blank" opens a new tab and puts the form info in the new tab, target="_self"puts the form info on the same page, target="_parent"  puts the info on the parent page -->
+      <!-- In forms, how to send the form and how to get it there (get or post) -->
+      </form>
+      http://www.google.com?name=ben&lastname=vaughan <!-- illustrates a get method This a basic format of a get-->
+      http://www.google.com/form_submit.php   <!-- illustrates a post method This a basic format of a postt-->
+  </body >
+</html>

@@ -1,0 +1,13 @@
+h1 {
+  padding: 0;
+  /* order of padding is top, right, bottom left*/
+  /*margin: 0;*/
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin: 5pt 10px 2em 3rem;
+  /*last  setting wins in margins and padding*/
+  /* order of margin is top, right, bottom left*/
+  /* em is the number of times relative to the current font size rem is the number of times relative to the body - great for mobile apps*/
+}

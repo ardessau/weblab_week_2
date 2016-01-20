@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>
+          CSS Intro
+      </title>
+      <style media="screen">
+          p {
+            font-family: sans-serif;
+          }
+          a {
+          border: 1px dotted #333;
+          }
+          p>a {
+            color: pink;
+            border: none;
+          }
+          /*p>a says that this tag is only applied to an immediate descendent of this paragraph only applies to children
+          of the paragraph and not grandchildren, etc., of that paragraph */
+          .header {
+            border: 1px solid red;
+            z-index: 1;
+          }
+        /* Format of CSS Rules are: selectorName (can be a tag(applies to everything), #id(use once), or .class(use multiple times)) {
+        property: value;
+        } */
+        #special {
+          color: aliceblue;
+        }
+        .content p:first-child {
+            font-weight: 100;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>
+          Header Text.
+      </n1>
+    </div>
+    <div class="content">
+        <p style="font-weight: bold; border-bottom: 1px solid #000; color: fuschia; font-style: italic; font-size: 3em;
+                   background: red; width: 200px; height: 40px; padding: 10px; box-sizing: border-box;">
+          <!--  Can also use content-box-->
+          <!--  Can use Hex for colors Example: #FFFFFF is white, #000000 is black-->
+          <!--  Can also use RGBA for colors (red, green blue, and a is between 0 and 1, 1 is opaque, and 0 is transparent)-->
+          <!--  px = pixel so 1px is one pixel -->
+          Some Content goes <a href="http://google.com">here</a>.
+        </p>
+        <p id="special">
+          Some more content.
+        </p>
+        <a href="http://bing.com">Search</a>
+      </div>
+      <div class="footer">
+          copyright &copy; 2016
+      </div>
+  </body>
+</html>
