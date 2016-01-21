@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf8">
+      <title>Background Check!</title>
+      <style media="screen">
+        body{
+            /*background: black;*/
+            background-color: black;
+            background-image: url(image.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            /*background-repeat: repeat-x; */
+            /*reaeat-x for x axis or repeat-y; for the y axis. Code above is for x axis*/
+            /*background-position: top-left;*/
+            /*background-position: 30px 50px;*/
+            /*height: 600px;*/
+        }
+        .container {
+            /*background: #fff url(file_icon.png) no-repeat 0px 9px;*/
+            color: #000;
+            padding: 15px 15px 15px 25x;
+            /*font-size: 2em;*/   /* 32px*/
+            font-size: 2rem; /*rem is the root em */
+            font-weight: bold;  /* 400 is normal, 800 is bold and the other numbers will or will not work depending on the font*/
+            /*body default font size is 16px, 2em is twice that or 32px*/
+            letter-spacing: 20x;  /* called kerning in photshop */
+            line-height: 1.3;  /* text will be int the center of the line.  Default is typically 1.3, does not take negative numbers, but will accetpt less than one*/
+            /*color: #fff;*/
+            text-shadow: 2px 5px 7px rgba(0,0,0,0.5);
+            box-shadow: 2px 5px 7px rgba(0,0,0,0.5);
+            /* text-shadow values left-right (x axis), up-down (y axis), blur (z axis???)- does not take negative values, then rgba - color of the shadow */
+           color: #fff;
+           transition: all .5s ease;
+           /*text-align: center;  left is the default text alirgn */
+           /*text-align: right;*/
+           text-decoration:none;
+           text-indent: 3em;
+        }
+
+        div:hover {
+          box-shadow: 0px 0px 0px rgba(0,0,0,0.5)
+        }
+        a:active {
+          color: yellow;
+        }
+        a:visited {
+            text-decoration: line-through;
+        }
+        </style>
+  </head>
+  <body>
+    <h1>Backgrounds</h1>
+      <div class="container">
+          Sample Text
+      </div>
+      <!-- hi+div.container>ul>li*8.a -->
+  </body>
