@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta charset="utf-8">
+       <title>Classic Layouts (ooooo, retro!)</title>
+       <style media="screen">
+          /* Reset Body */
+           body {
+               padding: 0;
+               margin: 0;
+
+           }
+          /* Header */
+           .header {
+               background-color: lightgreen;
+           }
+           /* Content */
+           .content {
+               background-color: tan;
+               position: absolute;
+               top: 16px;
+               bottom: 16px;
+               width: 100%;
+            }
+
+           .content>div {  /* Carat or right arrow >, means immediate children of .content */
+               float: left;
+
+           }
+
+            .sidebar {
+                background-color: tan;
+                width: 25%;
+            }
+
+            .main {
+                background-color: #fff;
+                width: 50%;
+            }
+
+            .ads {
+                background-color: green;
+                width: 25%;
+            }
+
+
+           /* Footer */
+           .footer {
+               background-color: lightblue;
+           }
+
+          /* Utility Rules */
+           .clearfix:after {
+               content: "";
+               display: block;
+               height: 0;
+               clear: both;
+           }
+
+       </style>
+   </head>
+   <body>
+           <div class="header">
+               header
+           </div>
+           <div class="content clearfix">
+               <div class="sidebar">
+                   <ul>
+                     <li>
+                       <a href="#">link1</a>
+                     </li>
+                     <li>
+                       <a href="#">link2</a>
+                     </li>
+                     <li>
+                       <a href="#">link3</a>
+                     </li>
+                     <li>
+                       <a href="#">link4</a>
+                     </li>
+
+                   </ul>
+
+               </div>
+               <div class="main">
+                   <p>
+                     asdlf;jdskla ajskljdskladjf ajskldfjdsklajsdf ajsklfjdsklajdf
+                   </p>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ab quas, voluptatem, eligendi accusantium maiores quos. Ad alias, quia aperiam distinctio libero aut ipsum perspiciatis, aliquam est consectetur a nulla.</p>
+                   <p>Deleniti iure tempora ea fugiat optio atque, soluta voluptate eos possimus vel ab necessitatibus beatae eveniet saepe quis quidem, debitis, sapiente fuga, est nemo rerum. Consequuntur ipsa, vitae! Recusandae, earum?</p>
+                   <p>Nihil officiis minima sit, magnam voluptas cum, porro magni quisquam voluptatibus distinctio accusantium officia ut modi, blanditiis voluptate cumque, iure! Quis fugiat aperiam, commodi corrupti quam quasi recusandae excepturi laborum!</p>
+                   <p>Esse nulla maiores nisi voluptates perferendis, sapiente maxime quo, quam inventore sit voluptate. Voluptatem veritatis consectetur quaerat recusandae itaque obcaecati laborum eos, officiis perspiciatis molestiae iusto, deserunt dolore, est aliquid?</p>
+                   <p>Reprehenderit nostrum itaque, modi, ad, delectus alias corporis ea perferendis debitis adipisci ratione natus! Aliquid eius debitis, ut neque ipsum, cum totam nemo impedit harum quis quibusdam officia odio hic.</p>
+               </div>
+               <div class="ads">
+                   ad$
+               </div>
+           </div>
+           <div class="footer">
+               footer
+           </div>
+   </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox - the new hotness</title>
+  <style>
+      body {
+          padding:0;
+          margin:0;
+          display: flex;
+          height: 100vh;
+          flex-direction: column;
+          overflow: hidden;
+      }
+
+      .header {
+          background-color: lightblue;
+          height: 50px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding-left: 1rem;
+          font-weight: 600;
+          font-size: 24px;
+
+      }
+
+      .content {
+          background-color: #ccc;
+          /* flex 1 0 auto; */
+          flex-grow: 1;
+          flex-shrink: 1;
+          flex-basis: auto;
+          display: flex;
+      }
+
+        .sidebar {
+            background-color: #ffffff;
+            width: 200px;
+            flex: 1 0 auto;
+        }
+
+        .main {
+            flex-shrink: 1;
+            background-color: #efefef;
+            overflow-y: scroll;
+
+        }
+
+        .ads {
+            background-color: pink;
+            width: 150px;
+            display: flex;
+            flex: 1 0 auto;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .ad {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            display: flex;
+            /* flex: 0 0 auto; */
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+            font-size: 36 px;
+            font-weight: 600;
+            font-family: sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        .ad:first-child {
+            margin-top: 1rem;
+        }
+        .ad:after {
+            content: "$";
+            display: block;
+            color: #fff;
+        }
+
+      .footer  {
+          background-color: lightgreen;
+      }
+
+  </style>
+</head>
+<body>
+  <div class="header">
+      header
+  </div>
+  <div class="content clearfix">
+      <div class="sidebar">
+          <ul>
+            <li>
+              <a href="#">link1</a>
+            </li>
+            <li>
+              <a href="#">link2</a>
+            </li>
+            <li>
+              <a href="#">link3</a>
+            </li>
+            <li>
+              <a href="#">link4</a>
+            </li>
+
+          </ul>
+
+      </div>
+      <div class="main">
+          <p>
+            asdlf;jdskla ajskljdskladjf ajskldfjdsklajsdf ajsklfjdsklajdf
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ab quas, voluptatem, eligendi accusantium maiores quos. Ad alias, quia aperiam distinctio libero aut ipsum perspiciatis, aliquam est consectetur a nulla.</p>
+          <p>Deleniti iure tempora ea fugiat optio atque, soluta voluptate eos possimus vel ab necessitatibus beatae eveniet saepe quis quidem, debitis, sapiente fuga, est nemo rerum. Consequuntur ipsa, vitae! Recusandae, earum?</p>
+          <p>Nihil officiis minima sit, magnam voluptas cum, porro magni quisquam voluptatibus distinctio accusantium officia ut modi, blanditiis voluptate cumque, iure! Quis fugiat aperiam, commodi corrupti quam quasi recusandae excepturi laborum!</p>
+          <p>Esse nulla maiores nisi voluptates perferendis, sapiente maxime quo, quam inventore sit voluptate. Voluptatem veritatis consectetur quaerat recusandae itaque obcaecati laborum eos, officiis perspiciatis molestiae iusto, deserunt dolore, est aliquid?</p>
+          <p>Reprehenderit nostrum itaque, modi, ad, delectus alias corporis ea perferendis debitis adipisci ratione natus! Aliquid eius debitis, ut neque ipsum, cum totam nemo impedit harum quis quibusdam officia odio hic.</p>
+      </div>
+      <div class="ads">
+          <div class="ad"></div>
+          <div class="ad"></div>
+          <div class="ad"></div>
+      </div>
+  </div>
+  <div class="footer">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <p>
+        copyright &copy; 2016,
+      </p>
+  </div>
+</body>
+</html>
